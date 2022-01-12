@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <title>Slider</title>
+</head>
+<body>
+    <h2>
+        Slider auto
+    </h2>
+    <div class="slider1">
+        <div class="img1">
+            <img src="img1.jpg" alt="img">
+        </div>
+        <div class="img2">
+            <img src="img2.jpg" alt="img">
+        </div>
+        <div class="img3">
+            <img src="img3.jpg" alt="img">
+        </div>
+    </div>
+    <h2>
+        Slider buttons
+    </h2>
+    <div class="slider2">
+        <button onclick="leftBtn(this)"><</button>
+        <div class="img1">
+            <img src="img1.jpg" alt="img">
+        </div>
+        <div class="img2">
+            <img src="img2.jpg" alt="img">
+        </div>
+        <div class="img3">
+            <img src="img3.jpg" alt="img">
+        </div>
+        <button onclick="rightBtn(this)">></button>
+    </div>
+    <h2>
+        Slick slider
+    </h2>
+    <div class="slick">
+        <div class="slick__item"><img src="img1.jpg" alt="img"></div>
+        <div class="slick__item"><img src="img2.jpg" alt="img"></div>
+        <div class="slick__item"><img src="img3.jpg" alt="img"></div>
+    </div>
+    <script>
+        "use strict";
+        $('.slick').slick({
+        });
+    </script>
+    <style>
+        .slick {
+            display: block;
+            margin: 0 auto;
+            width: 600px;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+        }
+        button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: #eaeaea;
+            color: black;
+            cursor: pointer;
+        }
+        h2 {
+            color: black;
+            font-size: 50px;
+            font-family: cursive;
+            text-align: center;
+        }
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .slick__item {
+            width: 450px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 50px;
+            background: green;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+        .slider1>div {
+            width: 450px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 50px;
+            background: green;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+        .slider1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slider2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slider2>div {
+            width: 450px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 50px;
+            background: green;
+            border: 1px solid white;
+            border-radius: 4px;
+            margin: 0 20px;
+        }
+    </style>
+</body>
+</html>
